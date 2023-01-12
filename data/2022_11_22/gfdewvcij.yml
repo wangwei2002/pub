@@ -14,9 +14,9 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"trojan","name":"御坂网络-Trojan-gRPC-TLS","server":"23.105.219.111","port":54012,"password":"47279aaa-d2d4-4b91-95ff-d731715b7956","udp":true,"skip-cert-verify":true,"sni":"www.dgyj.tk","network":grpc,"grpc-opts":{"grpc-service-name":"wriotrojangrpc"}}
-  - {"type":"vless","name":"御坂网络-Vless-WS-TLS-CDN","server":"23.105.219.111","port":54012,"uuid":"47279aaa-d2d4-4b91-95ff-d731715b7956","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"www.dgyj.tk","ws-opts":{"path":"/wriows","headers":{"host":"www.dgyj.tk"}}}
-  - {"type":"vless","name":"御坂网络-Vless-gRPC-TLS-CDN","server":"23.105.219.111","port":54012,"uuid":"47279aaa-d2d4-4b91-95ff-d731715b7956","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"wriogrpc"},"servername":"www.dgyj.tk"}
+  - {"type":"trojan","name":"御坂网络-Trojan-gRPC-TLS","server":"www.dgyj.tk","port":443,"password":"04c733c6-6872-4b9d-a376-d261fa234d53","udp":true,"skip-cert-verify":true,"sni":"www.dgyj.tk","network":grpc,"grpc-opts":{"grpc-service-name":"hpdbtrojangrpc"}}
+  - {"type":"vless","name":"御坂网络-Vless-WS-TLS-CDN","server":"www.dgyj.tk","port":443,"uuid":"04c733c6-6872-4b9d-a376-d261fa234d53","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"www.dgyj.tk","ws-opts":{"path":"/hpdbws","headers":{"host":"www.dgyj.tk"}}}
+  - {"type":"vless","name":"御坂网络-Vless-gRPC-TLS-CDN","server":"www.dgyj.tk","port":443,"uuid":"04c733c6-6872-4b9d-a376-d261fa234d53","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"hpdbgrpc"},"servername":"www.dgyj.tk"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
